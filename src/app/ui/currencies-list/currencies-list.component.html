@@ -1,0 +1,4 @@
+<li *ngFor="let currency of currenciesStore.currenciesListWithRates$ | async">
+    <span class="badge">{{currency.currencyCode}}</span>
+    <span class="name">{{currency.rate}}</span>
+</li>
